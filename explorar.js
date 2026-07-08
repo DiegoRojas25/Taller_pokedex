@@ -1,4 +1,4 @@
-//Ejercicio 1:
+//Parte 1:
 
 async function obtenerPokeInfo() {
   const respuesta = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu");

@@ -1,4 +1,4 @@
-//Ejercicio 2:
+//Parte 2:
 
 async function buscarPokemon(nombre) {
 
@@ -7,32 +7,20 @@ async function buscarPokemon(nombre) {
 
   if (!respuesta.ok) {
      console.log("Algo salió mal. Código:", respuesta.status);
-     
+     return null;
   }
 
    const datos = await respuesta.json();
-//   console.log(datos.name+": "+datos.id);
-   return datos;
+   console.log(datos.name+": "+datos.id);
+
 
 }
 
-// buscarPokemon("charizard");
-// buscarPokemon("PikacHu");
-// buscarPokemon("BulBasaUr");
+buscarPokemon("charizard");
+buscarPokemon("PikacHu");
+buscarPokemon("BulBasaUr");
 
-//Ejercicio 3:
-async function mostrarFicha(datos) {
 
-  const   
-  if (!datos) {
-     console.log("No hay nada para mostrar");
-     return;
-  }
-
-  const datos = await respuesta.json();
-  console.log(datos.name+": "+datos.id)
-
-}
 
 
 
